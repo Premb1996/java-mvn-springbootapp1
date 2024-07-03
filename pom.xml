@@ -33,13 +33,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-                <dependency>
-                        <groupId>com.sun</groupId>
-                        <artifactId>tools</artifactId>
-                        <version>1.8</version>
-                        <scope>system</scope>
-                        <systemPath>${project.basedir}/path/to/tools.jar</systemPath>
-                </dependency>
 	</dependencies>
 
 	<build>
@@ -50,10 +43,4 @@
 			</plugin>
 		</plugins>
 	</build>
-        <exclusions>
-                <exclusion>
-                                <artifactId>tools</artifactId>
-                                <groupId>com.sun</groupId>
-                </exclusion>
-        </exclusions>
 </project>
